@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import CreateView,DetailView
+from django.views.generic import CreateView, DetailView, ListView
 from administrator.models import HouseManager
 
 # Create your views here.
@@ -17,4 +17,11 @@ class NeHostelOwner(CreateView):
 class viewOwnerReport(DetailView):
     model = HouseManager
     template_name = 'administrator/hostelowner_report.html'
+
+class allRegisteredOwners(ListView):
+    context_object_name = 'all_owners'
+    template_name = 'administrator/allowners.html'
+
+    def get_queryset(self):
+        return HouseManager.objects.all()
 

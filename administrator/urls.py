@@ -9,5 +9,6 @@ urlpatterns = [
     url(r'^newOwner', views.NeHostelOwner.as_view(), name='newhostel'),
     #detail url pattern
     url(r'^(?P<pk>[0-9]+)/$',views.viewOwnerReport.as_view(),name='ownerreport'),
+    url(r'^houseowners/',views.allRegisteredOwners.as_view(),name='all-houseowners'),
 
 ]
