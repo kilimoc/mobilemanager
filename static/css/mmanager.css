@@ -1,0 +1,32 @@
+
+.navbar-default{
+     background-color:#E78200;
+     color: #ffffff;
+
+}
+.nav{
+    color: #ffffff;
+}
+.navbar-brand,.softwareName{
+ font-family:'Satisfy',cursive;
+ font-size:32px;
+
+}
+
+
+
+.footer{
+  text-decoration:overline;
+  min-height:100px;
+  bottom:0;
+    background:#E78200;
+  }
+  .navbar{
+    height:80px;
+
+  }
+.newcontainer{
+ margin:20px auto;
+ padding-right:20px;
+}
+
